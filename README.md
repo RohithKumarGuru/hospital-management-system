@@ -29,8 +29,49 @@ A full-stack backend project built with **Java Spring Boot** to manage hospital 
 ## 📂 How to Run
 
 ```bash
-# Clone the repository
-git clone https://github.com/YOUR_USERNAME/hospital-management-system.git
+
+## 📦 How to Run the Project
+
+### Prerequisites:
+- Java 17 or later
+- Maven
+- MySQL
+
+### Steps:
+1. **Clone**
+   ```bash
+   git clone https://github.com/RohithKumarGuru/hospital-management-system.git
+   cd hospital-management-system
+
+2. Create the MySQL Database
+
+sql
+Copy
+Edit
+CREATE DATABASE hospital_db;
+
+3. Update application.properties
+Open src/main/resources/application.properties and set:
+
+properties
+Copy
+Edit
+spring.datasource.url=jdbc:mysql://localhost:3306/hospital_db
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+
+4. Run the project
+Using Maven wrapper:
+
+bash
+Copy
+Edit
+./mvnw spring-boot:run
+Or using Eclipse: right-click HospitalManagementSystemApplication.java → Run
+
+5. Open the Swagger API documentation
+http://localhost:8080/swagger-ui/index.html
+
 
 # Navigate into the project
 cd hospital-management-system
