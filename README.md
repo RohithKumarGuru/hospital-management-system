@@ -46,16 +46,12 @@ A full-stack backend project built with **Java Spring Boot** to manage hospital 
 2. Create the MySQL Database
 
 sql
-Copy
-Edit
 CREATE DATABASE hospital_db;
 
 3. Update application.properties
 Open src/main/resources/application.properties and set:
 
 properties
-Copy
-Edit
 spring.datasource.url=jdbc:mysql://localhost:3306/hospital_db
 spring.datasource.username=your_username
 spring.datasource.password=your_password
@@ -64,8 +60,6 @@ spring.datasource.password=your_password
 Using Maven wrapper:
 
 bash
-Copy
-Edit
 ./mvnw spring-boot:run
 Or using Eclipse: right-click HospitalManagementSystemApplication.java → Run
 
